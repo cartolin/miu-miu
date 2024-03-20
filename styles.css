@@ -10,8 +10,8 @@ body {
 
 #game-container {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border: 2px solid #333;
 }
 
@@ -19,14 +19,29 @@ body {
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: orange;
-    border-radius: 50%;
+    background-image: url('gatitov2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #mouse {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: gray;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url('raton.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#progress-bar {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
 }
