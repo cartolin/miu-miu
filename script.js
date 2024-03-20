@@ -27,7 +27,7 @@ function increaseScore() {
     if (score === 100) {
         mouseSpeed = 500; // Aumentar la velocidad del ratón cuando se alcanza una puntuación de 100
     } else if (score === 200) {
-        alert('¡Miu Miu! ¡Llegaste a la meta!');
+        alert('Miau Miau! ¡Llegaste a la meta!');
         resetGame(); // Reiniciar el juego cuando se alcanza una puntuación de 200
     }
 }
