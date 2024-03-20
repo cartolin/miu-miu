@@ -4,16 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego de Atrapar Ratones</title>
+    <title>Juego de Atrapar Ratones - Miu Miu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="game-container">
-        <div id="kitty"></div>
-        <div id="mouse"></div>
-        <div id="score">Puntuación: 0</div>
-        <progress id="progress-bar" max="200" value="0"></progress>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 pt-2 pb-2 text-center">
+                <h1>Miu Miu</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-4 d-none d-md-block">
+                <img id="imagen-1" src="aplastando.jpg"
+                    class="img-fluid rounded" alt="">
+            </div>
+            <div id="game-container">
+                <div id="kitty"></div>
+                <div id="mouse"></div>
+                <div id="score">Puntuación: 0</div>
+                <progress id="progress-bar" max="200" value="0"></progress>
+            </div>
+            <div class="col-md-4 col-4 d-none d-md-block">
+                <img id="imagen-2" src="conversando.jpg"
+                 class="img-fluid rounded" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <div class="container pt-2">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="https://github.com/cartolin/miu-miu" class="btn btn-success">Dar estrellitas</a>
+                <br>
+                by Fidel Cartolin 2024
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>

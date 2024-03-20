@@ -1,10 +1,4 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f5f5f5;
 }
 
@@ -13,6 +7,9 @@ body {
     width: 500px;
     height: 500px;
     border: 2px solid #333;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 #kitty {
@@ -26,22 +23,50 @@ body {
 
 #mouse {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-image: url('raton.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #score {
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     left: 10px;
 }
 
 #progress-bar {
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
     left: 10px;
     width: calc(100% - 20px);
+}
+
+#restart-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+#imagen-1,
+#imagen-2 {
+    animation: giroHorizontal 5s infinite linear;
+    transform-origin: center center;
+}
+
+#imagen-2 {
+    animation-direction: reverse;
+}
+
+@keyframes giroHorizontal {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }
